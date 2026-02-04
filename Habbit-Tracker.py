@@ -157,70 +157,86 @@ class ConsistencyDashboard(QMainWindow):
             "QPushButton { background-color: #1f1f1f; color: #ffffff; border: none; border-radius: 8px; padding: 9px 14px; font-weight: 600; }"
             "QPushButton:hover { background-color: #000000; }"
         )
+        
+        
         add_row.addWidget(self.habit_input)
         add_row.addWidget(self.add_button)
         add_row.addWidget(self.remove_button)
-
+        
+        
         self.table = QTableWidget()
         self.table.setAlternatingRowColors(True)
         self.table.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.table.setSelectionMode(QAbstractItemView.ExtendedSelection)
-
+        
+        
         tracker_layout.addLayout(add_row)
         tracker_layout.addWidget(self.table)
-
+        
+        
         right_card = QFrame()
         right_card.setProperty("class", "card")
         right_layout = QVBoxLayout(right_card)
-
+        
+        
         weekly_title = QLabel("Weekly Progress")
         weekly_title.setAlignment(Qt.AlignCenter)
         weekly_title.setStyleSheet("font-size: 20px; font-weight: 700; color: #1f1f1f;")
-
+        
+        
         self.weekly_bar = QProgressBar()
         self.weekly_bar.setRange(0, 100)
         self.weekly_bar.setValue(0)
         self.weekly_bar.setFormat("%p%")
-
+        
+        
         self.week_info = QLabel("Current week completion: 0%")
         self.week_info.setAlignment(Qt.AlignCenter)
         self.week_info.setStyleSheet("font-size: 14px; color: #3d3d3d;")
-
+        
+        
         right_layout.addWidget(weekly_title)
         right_layout.addWidget(self.weekly_bar)
         right_layout.addWidget(self.week_info)
         right_layout.addStretch()
-
+        
+        
         content_row.addWidget(tracker_card, 4)
         content_row.addWidget(right_card, 1)
-
+        
+        
     def _configure_table(self) -> None:
         headers = ["Habits"] + [str(day) for day in range(1, self.days_in_month + 1)] + ["%"]
         self.table.setColumnCount(len(headers))
         self.table.setHorizontalHeaderLabels(headers)
         self.table.setRowCount(0)
-
+        
+        
         self.table.setColumnWidth(0, 230)
         for col in range(1, self.days_in_month + 1):
             self.table.setColumnWidth(col, 32)
         self.table.setColumnWidth(self.days_in_month + 1, 55)
-
+        
+        
         header = self.table.horizontalHeader()
         header.setSectionResizeMode(0, QHeaderView.Fixed)
         header.setSectionResizeMode(self.days_in_month + 1, QHeaderView.Fixed)
-
+        
+        
     def _connect_signals(self) -> None:
         self.add_button.clicked.connect(self._add_habit_from_input)
         self.remove_button.clicked.connect(self._remove_selected_habits)
         self.table.itemChanged.connect(self._handle_item_changed)
-
+        
+        
     def _start_weekly_refresh_timer(self) -> None:
         # Re-check date periodically so weekly bar resets automatically when a new week starts.
         self.weekly_refresh_timer = QTimer(self)
         self.weekly_refresh_timer.setInterval(60_000)
         self.weekly_refresh_timer.timeout.connect(self._sync_active_week_with_today)
         self.weekly_refresh_timer.start()
-
+        
+        
     def _sync_active_week_with_today(self) -> None:
         today = datetime.date.today()
         if today.year != self.year or today.month != self.month:
@@ -229,99 +245,120 @@ class ConsistencyDashboard(QMainWindow):
         if current_week_start != self.active_week_start_day:
             self.active_week_start_day = current_week_start
         self._refresh_weekly_progress()
-
+        
+        
     def _seed_demo_habits(self) -> None:
         for habit_name in ["Gym", "Study for 4 hours", "Keep diet consistent", "Journal"]:
             self._add_habit_row(habit_name)
-
+            
+            
     def _add_habit_from_input(self) -> None:
         habit_name = self.habit_input.text().strip()
         if not habit_name:
             return
-
+        
+        
         self._add_habit_row(habit_name)
         self.habit_input.clear()
         self._refresh_weekly_progress()
-
+        
+        
     def _add_habit_row(self, habit_name: str) -> None:
         self.is_updating_table = True
-
+        
+        
         row = self.table.rowCount()
         self.table.insertRow(row)
-
+        
+        
         name_item = QTableWidgetItem(habit_name)
         name_item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
         self.table.setItem(row, 0, name_item)
-
+        
+        
         for day_col in range(1, self.days_in_month + 1):
             check_item = QTableWidgetItem("")
             check_item.setFlags(Qt.ItemIsUserCheckable | Qt.ItemIsEnabled | Qt.ItemIsSelectable)
             check_item.setCheckState(Qt.Unchecked)
             check_item.setTextAlignment(Qt.AlignCenter)
             self.table.setItem(row, day_col, check_item)
-
+            
+            
         percent_item = QTableWidgetItem("0%")
         percent_item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsSelectable)
         percent_item.setTextAlignment(Qt.AlignCenter)
         self.table.setItem(row, self.days_in_month + 1, percent_item)
-
+        
+        
         self.is_updating_table = False
-
+        
+        
     def _remove_selected_habits(self) -> None:
         selected_rows = sorted({index.row() for index in self.table.selectionModel().selectedRows()}, reverse=True)
         if not selected_rows:
             return
-
+        
+        
         self.is_updating_table = True
         for row in selected_rows:
             self.table.removeRow(row)
         self.is_updating_table = False
         self._refresh_weekly_progress()
-
+        
+        
     def _handle_item_changed(self, item: QTableWidgetItem) -> None:
         if self.is_updating_table:
             return
-
+        
+        
         column = item.column()
         if 1 <= column <= self.days_in_month:
             self.active_week_start_day = ((column - 1) // 7) * 7 + 1
             self._update_row_percent(item.row())
             self._refresh_weekly_progress()
-
+            
+            
     def _update_row_percent(self, row: int) -> None:
         checked_count = 0
-
+        
+        
         for col in range(1, self.days_in_month + 1):
             cell = self.table.item(row, col)
             if cell and cell.checkState() == Qt.Checked:
                 checked_count += 1
-
+                
+                
         percent = round((checked_count / self.days_in_month) * 100) if self.days_in_month else 0
-
+        
+        
         self.is_updating_table = True
         percent_item = self.table.item(row, self.days_in_month + 1)
         if percent_item:
             percent_item.setText(f"{percent}%")
         self.is_updating_table = False
-
+        
+        
     def _refresh_weekly_progress(self) -> None:
         if self.table.rowCount() == 0:
             self.weekly_bar.setValue(0)
             self.week_info.setText("Current week completion: 0%")
             return
-
+        
+        
         week_start_day = self.active_week_start_day
         week_end_day = min(week_start_day + 6, self.days_in_month)
         days_in_week_slice = week_end_day - week_start_day + 1
         total_boxes = self.table.rowCount() * days_in_week_slice
         checked_boxes = 0
-
+        
+        
         for row in range(self.table.rowCount()):
             for day in range(week_start_day, week_end_day + 1):
                 cell = self.table.item(row, day)
                 if cell and cell.checkState() == Qt.Checked:
                     checked_boxes += 1
-
+                    
+                    
         week_percent = round((checked_boxes / total_boxes) * 100) if total_boxes else 0
         self.weekly_bar.setValue(week_percent)
         self.week_info.setText(f"Week {week_start_day}-{week_end_day} completion: {week_percent}%")
