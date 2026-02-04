@@ -76,66 +76,81 @@ class ConsistencyDashboard(QMainWindow):
             QProgressBar::chunk { background-color: #5fbf6a; border-radius: 7px; }
             """
         )
-
+        
     def _build_layout(self) -> None:
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
-
+        
+        
         root_layout = QVBoxLayout(central_widget)
         root_layout.setContentsMargins(18, 18, 18, 18)
         root_layout.setSpacing(14)
-
+        
+        
         top_row = QHBoxLayout()
         top_row.setSpacing(14)
         root_layout.addLayout(top_row, 2)
-
+        
+        
         title_card = QFrame()
         title_card.setProperty("class", "card")
         title_layout = QVBoxLayout(title_card)
-
+        
+        
         title_label = QLabel("THE CONSISTENCY DASHBOARD")
         title_label.setObjectName("titleLabel")
-
+        
+        
         month_text = datetime.date(self.year, self.month, 1).strftime("%B").upper()
         month_label = QLabel(month_text)
         month_label.setObjectName("monthLabel")
-
+        
+        
         title_layout.addWidget(title_label)
         title_layout.addWidget(month_label)
         title_layout.addStretch()
-
+        
+        
         graph_card = QFrame()
         graph_card.setProperty("class", "card")
         graph_layout = QVBoxLayout(graph_card)
-
+        
+        
         graph_title = QLabel("Monthly Progress")
         graph_title.setStyleSheet("font-size: 16px; font-weight: 700; color: #252525;")
-
+        
+        
         graph_placeholder = QLabel("Line graph goes here")
         graph_placeholder.setAlignment(Qt.AlignCenter)
         graph_placeholder.setMinimumHeight(220)
         graph_placeholder.setStyleSheet(
             "background-color: #e8f5e9; border: 1px solid #b9dfbc; border-radius: 10px; font-size: 14px; color: #3a6b3d;"
         )
-
+        
+        
         graph_layout.addWidget(graph_title)
         graph_layout.addWidget(graph_placeholder)
-
+        
+        
         top_row.addWidget(title_card, 1)
         top_row.addWidget(graph_card, 2)
-
+        
+        
         content_row = QHBoxLayout()
         content_row.setSpacing(14)
         root_layout.addLayout(content_row, 5)
-
+        
+        
         tracker_card = QFrame()
         tracker_card.setProperty("class", "card")
         tracker_layout = QVBoxLayout(tracker_card)
-
+        
+        
         add_row = QHBoxLayout()
         self.habit_input = QLineEdit()
         self.habit_input.setPlaceholderText("Add habit (e.g. Study, Run, Read 20 pages)")
-
+        
+        
         self.add_button = QPushButton("Add Habit")
         self.remove_button = QPushButton("Remove Selected")
         self.remove_button.setStyleSheet(
