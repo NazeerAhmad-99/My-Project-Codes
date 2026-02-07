@@ -1,0 +1,15 @@
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\bin\Debug\net10.0\C# learn.exe
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\bin\Debug\net10.0\C# learn.deps.json
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\bin\Debug\net10.0\C# learn.runtimeconfig.json
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\bin\Debug\net10.0\C# learn.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\bin\Debug\net10.0\C# learn.pdb
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\obj\Debug\net10.0\C# learn.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\obj\Debug\net10.0\C# learn.AssemblyInfoInputs.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\obj\Debug\net10.0\C# learn.AssemblyInfo.cs
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\obj\Debug\net10.0\C# learn.csproj.CoreCompileInputs.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\obj\Debug\net10.0\C# learn.sourcelink.json
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\obj\Debug\net10.0\C# learn.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\obj\Debug\net10.0\refint\C# learn.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\obj\Debug\net10.0\C# learn.pdb
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\obj\Debug\net10.0\C# learn.genruntimeconfig.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\C# learn\C# learn\obj\Debug\net10.0\ref\C# learn.dll
