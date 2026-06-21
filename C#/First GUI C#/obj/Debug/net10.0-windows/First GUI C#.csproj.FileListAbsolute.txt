@@ -1,0 +1,18 @@
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\bin\Debug\net10.0-windows\First GUI C#.exe
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\bin\Debug\net10.0-windows\First GUI C#.deps.json
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\bin\Debug\net10.0-windows\First GUI C#.runtimeconfig.json
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\bin\Debug\net10.0-windows\First GUI C#.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\bin\Debug\net10.0-windows\First GUI C#.pdb
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\First_GUI_C_.Form1.resources
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\First_GUI_C_.Properties.Resources.resources
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\First GUI C#.csproj.GenerateResource.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\First GUI C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\First GUI C#.AssemblyInfoInputs.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\First GUI C#.AssemblyInfo.cs
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\First GUI C#.csproj.CoreCompileInputs.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\First GUI C#.sourcelink.json
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\First GUI C#.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\refint\First GUI C#.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\First GUI C#.pdb
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\First GUI C#.genruntimeconfig.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\First GUI C#\obj\Debug\net10.0-windows\ref\First GUI C#.dll

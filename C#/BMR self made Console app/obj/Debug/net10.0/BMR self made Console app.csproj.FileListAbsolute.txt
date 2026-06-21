@@ -1,0 +1,15 @@
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\bin\Debug\net10.0\BMR self made Console app.exe
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\bin\Debug\net10.0\BMR self made Console app.deps.json
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\bin\Debug\net10.0\BMR self made Console app.runtimeconfig.json
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\bin\Debug\net10.0\BMR self made Console app.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\bin\Debug\net10.0\BMR self made Console app.pdb
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\obj\Debug\net10.0\BMR self made Console app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\obj\Debug\net10.0\BMR self made Console app.AssemblyInfoInputs.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\obj\Debug\net10.0\BMR self made Console app.AssemblyInfo.cs
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\obj\Debug\net10.0\BMR self made Console app.csproj.CoreCompileInputs.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\obj\Debug\net10.0\BMR self made Console app.sourcelink.json
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\obj\Debug\net10.0\BMR self made Console app.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\obj\Debug\net10.0\refint\BMR self made Console app.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\obj\Debug\net10.0\BMR self made Console app.pdb
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\obj\Debug\net10.0\BMR self made Console app.genruntimeconfig.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\BMR self made Console app\obj\Debug\net10.0\ref\BMR self made Console app.dll

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\nazir\\Desktop\\My Project Codes\\C#\\C# learn\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7339C411-4D04-4DC0-A949-4785E759CF81}|C# learn\\C# learn.csproj|c:\\users\\nazir\\desktop\\my project codes\\c#\\c# learn\\c# learn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7339C411-4D04-4DC0-A949-4785E759CF81}|C# learn\\C# learn.csproj|solutionrelative:c# learn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A3B5522C-86EF-571D-81AA-A30AC8675B99}|C# learn\\C# learn.csproj|c:\\users\\nazir\\desktop\\my project codes\\c#\\c# learn\\c# learn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3B5522C-86EF-571D-81AA-A30AC8675B99}|C# learn\\C# learn.csproj|solutionrelative:c# learn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,9 +26,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nazir\\Desktop\\My Project Codes\\C#\\C# learn\\C# learn\\Program.cs",
               "RelativeDocumentMoniker": "C# learn\\Program.cs",
-              "ToolTip": "C:\\Users\\nazir\\Desktop\\My Project Codes\\C#\\C# learn\\C# learn\\Program.cs",
-              "RelativeToolTip": "C# learn\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAjAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\nazir\\Desktop\\My Project Codes\\C#\\C# learn\\C# learn\\Program.cs*",
+              "RelativeToolTip": "C# learn\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-07T01:43:10.334Z",
               "EditorCaption": ""

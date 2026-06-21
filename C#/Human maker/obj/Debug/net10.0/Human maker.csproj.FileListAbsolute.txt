@@ -1,0 +1,15 @@
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\bin\Debug\net10.0\Human maker.exe
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\bin\Debug\net10.0\Human maker.deps.json
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\bin\Debug\net10.0\Human maker.runtimeconfig.json
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\bin\Debug\net10.0\Human maker.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\bin\Debug\net10.0\Human maker.pdb
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\obj\Debug\net10.0\Human maker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\obj\Debug\net10.0\Human maker.AssemblyInfoInputs.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\obj\Debug\net10.0\Human maker.AssemblyInfo.cs
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\obj\Debug\net10.0\Human maker.csproj.CoreCompileInputs.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\obj\Debug\net10.0\Human maker.sourcelink.json
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\obj\Debug\net10.0\Human maker.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\obj\Debug\net10.0\refint\Human maker.dll
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\obj\Debug\net10.0\Human maker.pdb
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\obj\Debug\net10.0\Human maker.genruntimeconfig.cache
+C:\Users\nazir\Desktop\My Project Codes\C#\Human maker\obj\Debug\net10.0\ref\Human maker.dll

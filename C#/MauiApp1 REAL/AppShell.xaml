@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+//The AppShell.xaml and AppShell.xaml.cs files that specify the initial page for the application
+    //and handle the registration of pages for navigation routing.
+<Shell
+    x:Class="MauiApp1_REAL.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp1_REAL"
+    Title="MauiApp1_REAL">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>

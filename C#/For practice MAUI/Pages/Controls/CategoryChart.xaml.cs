@@ -1,0 +1,10 @@
+namespace For_practice_MAUI.Pages.Controls
+{
+    public partial class CategoryChart
+    {
+        public CategoryChart()
+        {
+            InitializeComponent();
+        }
+    }
+}
