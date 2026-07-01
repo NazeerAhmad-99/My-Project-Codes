@@ -1,0 +1,5 @@
+print("Please enter your name:")
+input_name = str(input())
+print("Hello, " + input_name + "! Welcome to the New Project.")
+print()
+print("What would you like to do today?")
