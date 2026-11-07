@@ -1,0 +1,60 @@
+/* Closing invitation and footer */
+.closing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.closing h2 {
+  font-size: clamp(44px, 5.5vw, 78px);
+}
+.closing em {
+  font-style: normal;
+  color: var(--accent);
+}
+.closing-arrow {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #c6cbbb;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.closing-arrow svg {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1;
+}
+.closing-arrow:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+footer {
+  padding: 35px 5% 25px;
+  border-top: 1px solid #d3d7c8;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-size: 10px;
+  color: #777f6b;
+}
+footer .logo {
+  color: #292e24;
+}
+footer p {
+  margin-right: auto;
+}
+footer > a:last-of-type {
+  margin-left: 20px;
+}
+footer small {
+  width: 100%;
+  font-size: 9px;
+  margin-top: 10px;
+}

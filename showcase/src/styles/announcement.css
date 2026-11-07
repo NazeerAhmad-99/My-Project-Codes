@@ -1,0 +1,18 @@
+/* Scrolling-style announcement strip */
+.ticker {
+  background: #272a22;
+  color: #e8e9dd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  padding: 21px 20px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ticker svg {
+  width: 13px;
+  color: #aab39b;
+}

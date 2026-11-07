@@ -1,0 +1,409 @@
+/* Responsive layouts */
+@media (min-width: 1600px) {
+  .playground {
+    padding-left: max(5%, calc((100vw - 1440px) / 2));
+    padding-right: max(5%, calc((100vw - 1440px) / 2));
+  }
+}
+@media (max-width: 1100px) {
+  header {
+    padding: 0 4%;
+  }
+  .hero {
+    padding-left: 4%;
+    padding-right: 4%;
+    grid-template-columns: 44% 56%;
+  }
+  .hero-stage {
+    min-height: 440px;
+  }
+  .key {
+    height: 31px;
+    font-size: 8px;
+  }
+  .keyboard {
+    padding: 10px 9px 16px;
+  }
+  .key-row {
+    gap: 3px;
+    margin-bottom: 4px;
+  }
+  .floating-note {
+    bottom: 60px;
+  }
+  .section {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .product-grid {
+    gap: 16px;
+  }
+  .product-photo {
+    height: 230px;
+  }
+  .product-title > button {
+    font-size: 14px;
+  }
+  .ticker {
+    justify-content: flex-start;
+    gap: 40px;
+  }
+  .story-copy {
+    padding: 55px 10%;
+  }
+  .hero-copy > p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 760px) {
+  header {
+    height: 75px;
+    padding: 0 6%;
+  }
+  .logo {
+    font-size: 27px;
+  }
+  nav {
+    gap: 18px;
+    font-size: 11px;
+  }
+  nav a:last-child {
+    display: none;
+  }
+  .bag {
+    font-size: 0;
+    gap: 7px;
+  }
+  .bag span {
+    font-size: 10px;
+  }
+  .hero {
+    padding: 35px 6% 0;
+    grid-template-columns: 1fr;
+  }
+  .hero-copy {
+    padding: 0;
+  }
+  .availability {
+    font-size: 9px;
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-size: clamp(62px, 13vw, 90px);
+    letter-spacing: -0.06em;
+  }
+  .hero-copy > p {
+    font-size: 13px;
+    margin-top: 22px;
+  }
+  .hero-note {
+    position: absolute;
+    right: 6%;
+    top: 220px;
+    writing-mode: vertical-rl;
+    gap: 8px;
+    font-size: 9px;
+  }
+  .hero-note .tiny-cross {
+    font-size: 18px;
+  }
+  .hero-stage {
+    min-height: 380px;
+    margin-top: 45px;
+  }
+  .stage-top {
+    left: 0;
+    font-size: 8px;
+  }
+  .stage-word {
+    top: 35px;
+    left: 5%;
+    font-size: 29vw;
+  }
+  .keyboard {
+    max-width: 510px;
+    width: 94%;
+    margin-top: 30px;
+  }
+  .key {
+    height: 33px;
+  }
+  .floating-note {
+    bottom: 48px;
+    right: 0;
+    font-size: 7px;
+  }
+  .stage-bottom {
+    left: 0;
+    bottom: 0;
+  }
+  .hero-controls {
+    margin-top: 28px;
+    gap: 13px;
+    flex-wrap: wrap;
+    padding: 22px 0;
+  }
+  .scroll-hint {
+    display: none;
+  }
+  .lighting button {
+    padding: 5px 8px;
+  }
+  .ticker {
+    padding: 18px;
+    font-size: 8px;
+    gap: 24px;
+  }
+  .section {
+    padding: 55px 6%;
+  }
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 17px;
+    margin-bottom: 27px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  .section-heading > p {
+    font-size: 11px;
+  }
+  .filters {
+    gap: 20px;
+  }
+  .filters button {
+    font-size: 11px;
+  }
+  .filter-caption {
+    display: none;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 16px;
+  }
+  .product-photo {
+    height: 230px;
+  }
+  .product-category {
+    font-size: 6px;
+    top: 10px;
+    left: 8px;
+    padding: 4px;
+  }
+  .product-title {
+    margin-top: 14px;
+  }
+  .product-title > button {
+    font-size: 13px;
+    gap: 4px;
+  }
+  .product-title > button svg {
+    width: 12px;
+  }
+  .product-title > span {
+    font-size: 11px;
+  }
+  .product > p {
+    font-size: 10px;
+    line-height: 1.5;
+    min-height: 15px;
+  }
+  .compare-toggle {
+    font-size: 8px;
+    padding: 5px;
+    bottom: 8px;
+    left: 8px;
+  }
+  .playground {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .play-icon {
+    display: none;
+  }
+  .playground-intro {
+    position: relative;
+  }
+  .playground p {
+    font-size: 11px;
+    margin-top: 18px;
+  }
+  .lab-label {
+    font-size: 8px;
+    margin-top: 22px;
+  }
+  .reaction {
+    min-height: 290px;
+    padding: 24px;
+  }
+  .reaction-main {
+    font-size: 26px;
+  }
+  .story {
+    grid-template-columns: 1fr;
+  }
+  .story-image {
+    min-height: 370px;
+  }
+  .story-copy {
+    padding: 48px 8%;
+  }
+  .story-copy h2 {
+    font-size: 52px;
+  }
+  .story-copy p {
+    max-width: 48ch;
+  }
+  .closing h2 {
+    font-size: 45px;
+  }
+  .closing-arrow {
+    width: 70px;
+    height: 70px;
+  }
+  .closing-arrow svg {
+    width: 30px;
+  }
+  footer {
+    padding: 30px 6%;
+    gap: 18px;
+  }
+  footer p {
+    font-size: 9px;
+  }
+  footer > span {
+    width: 65%;
+    font-size: 9px;
+  }
+  footer > a:last-of-type {
+    margin-left: auto;
+  }
+  footer small {
+    line-height: 1.8;
+  }
+  .modal {
+    padding: 28px 23px;
+  }
+  .modal h2 {
+    font-size: 32px;
+  }
+  .drawer {
+    padding-top: 65px;
+  }
+  .overlay {
+    padding: 16px;
+  }
+  .comparison-modal {
+    padding-top: 50px;
+  }
+  .compare-grid {
+    gap: 12px;
+  }
+  .compare-grid h3 {
+    font-size: 14px;
+  }
+  .compare-grid img {
+    height: 105px;
+  }
+  .compare-grid .primary {
+    padding: 10px 8px;
+    font-size: 9px;
+  }
+  .compare-grid .primary svg {
+    display: none;
+  }
+  .compare-grid .spec {
+    font-size: 9px;
+    min-height: 45px;
+  }
+  .detail-image {
+    height: 220px;
+  }
+  .toast {
+    font-size: 11px;
+    padding: 14px 18px;
+    white-space: normal;
+  }
+  .compare-bar {
+    gap: 10px;
+    bottom: 16px;
+    width: max-content;
+    max-width: 95vw;
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  nav {
+    gap: 12px;
+    font-size: 10px;
+  }
+  .hero-controls {
+    gap: 9px;
+    font-size: 9px;
+  }
+  .control-separator {
+    margin: 0;
+  }
+  .swatches {
+    gap: 7px;
+  }
+  .swatches button {
+    width: 18px;
+    height: 18px;
+  }
+  .hero-stage {
+    min-height: 310px;
+  }
+  .key {
+    height: 25px;
+    font-size: 6px;
+  }
+  .keyboard-top {
+    font-size: 5px;
+    padding-bottom: 6px;
+  }
+  .knob {
+    width: 17px;
+    height: 17px;
+  }
+  .product-photo {
+    height: 190px;
+  }
+  .product-grid {
+    gap: 20px 12px;
+  }
+  .reaction-main {
+    font-size: 22px;
+  }
+  .closing h2 {
+    font-size: 37px;
+  }
+  .hero-note {
+    display: none;
+  }
+  .compare-grid {
+    overflow-x: auto;
+    grid-template-columns: repeat(var(--columns), minmax(105px, 1fr));
+  }
+}
+/* Accessibility: respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .keyboard:hover {
+    transform: rotate(-13deg) rotateX(24deg);
+  }
+}
+
+.hero {
+  overflow: clip;
+}

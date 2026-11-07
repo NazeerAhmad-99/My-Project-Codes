@@ -1,0 +1,29 @@
+@keyframes key-light {
+  0%,
+  100% {
+    background: #c3c7b5;
+    color: #5d6150;
+  }
+  50% {
+    background: var(--accent);
+    color: white;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0.5;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
