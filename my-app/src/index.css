@@ -92,3 +92,15 @@
 .counterButton:hover {
   background-color: hsl(197, 100%, 48%);
 }
+.on-change-component {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid hsla(261, 83%, 50%, 0.637);
+  border-radius: 10px;
+  background-color: hsl(345, 33%, 58%);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.2em;
+  padding: 5px;
+}

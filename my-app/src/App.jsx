@@ -6,12 +6,14 @@ import List from "./List.jsx";
 import ProfilePicture from "./ProfilePicture.jsx";
 import MyComponent from "./MyComponenent.jsx";
 import Counter from "./Counter.jsx";
+import OnChangeComponent from "./onChange.jsx";
 
 function App() {
   return (
     <>
       <Button />
       <Counter />
+      <OnChangeComponent />
       <MyComponent />
       <UserGreeting isLoggedIn={true} username="Nazeer" />
       <Student name="Mallika" age={22} isStudent={false} />
