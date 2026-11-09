@@ -60,3 +60,35 @@
   padding: 5px;
   border-bottom: 1px solid rgb(143, 97, 97);
 }
+
+.counterContainer {
+  text-align: center;
+  margin: 20px;
+  font-family:
+    Space Grotesk,
+    sans-serif;
+}
+
+.countDisplay {
+  font-size: 10em;
+  margin: 10px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.counterButton {
+  width: 150px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px 5px;
+  background-color: hsl(197, 100%, 58%);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.counterButton:hover {
+  background-color: hsl(197, 100%, 48%);
+}
