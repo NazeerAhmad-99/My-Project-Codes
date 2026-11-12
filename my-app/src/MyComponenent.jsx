@@ -1,33 +1,32 @@
 import React, { useState } from "react";
 
 function MyComponent() {
-  const [name, setName] = useState("Guest");
-
-  const [age, setAge] = useState(0);
-
-  const [isEmployed, setIsEmployed] = useState(false);
-
-  const incrementAge = () => {
-    setAge(age + 1);
-  };
-
-  const UpdateName = () => {
-    setName("Nazeer");
-  };
-  const UpdateEmploymentStatus = () => {
-    setIsEmployed(!isEmployed);
-  };
-
+  const [car, setCar] = useState({
+    year: 2024,
+    make: "Ford",
+    model: "Mustang",
+  });
+  function handleYearChange(e) {
+    setCar((c) => ({ ...c, year: e.target.value }));
+  }
+  function handleMakeChange(e) {
+    setCar((c) => ({ ...c, make: e.target.value }));
+  }
+  function handleModelChange(e) {
+    setCar((c) => ({ ...c, model: e.target.value }));
+  }
   return (
     <div>
-      <p>Name: {name}</p>
-      <button onClick={UpdateName}>Set Name</button>
+      <p>
+        Your favourite car is a {car.year} {car.make} {car.model}
+      </p>
 
-      <p>Age: {age}</p>
-      <button onClick={incrementAge}>Set Age</button>
-
-      <p>Employed: {isEmployed ? "Yes" : "No"}</p>
-      <button onClick={UpdateEmploymentStatus}>Employment Status</button>
+      <input type="number" value={car.year} onChange={handleYearChange} />
+      <br />
+      <input type="text" value={car.make} onChange={handleMakeChange} />
+      <br />
+      <input type="text" value={car.model} onChange={handleModelChange} />
+      <br />
     </div>
   );
 }

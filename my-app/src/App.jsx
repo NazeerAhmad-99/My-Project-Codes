@@ -7,13 +7,22 @@ import ProfilePicture from "./ProfilePicture.jsx";
 import MyComponent from "./MyComponenent.jsx";
 import Counter from "./Counter.jsx";
 import OnChangeComponent from "./onChange.jsx";
-
+import UpdateArrayState from "./UpdateArrayState.jsx";
+import ArrayOfObjs from "./ArrayOfObjs.jsx";
+import UseEffectExample from "./useEffect.jsx";
+import ComponentA from "./ComponentA.jsx";
+import UseRefExample from "./UseRef.jsx";
 function App() {
   return (
     <>
       <Button />
       <Counter />
+      <UseEffectExample />
+      <UseRefExample />
+      <ComponentA />
       <OnChangeComponent />
+      <ArrayOfObjs />
+      <UpdateArrayState />
       <MyComponent />
       <UserGreeting isLoggedIn={true} username="Nazeer" />
       <Student name="Mallika" age={22} isStudent={false} />
@@ -22,7 +31,7 @@ function App() {
       <List />
       <ProfilePicture />
       <Student name="Supa" age={28} isStudent={true} />
-      <Card />
+      <Card />s
     </>
   );
 }
